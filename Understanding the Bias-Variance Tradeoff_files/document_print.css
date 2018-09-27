@@ -1,0 +1,238 @@
+#document {
+  counter-reset: figure 0 section 0;
+}
+
+/* Increment Figure Counter */
+.content-node.image,
+.content-node.resource {
+  counter-increment: figure;
+}
+.content-node .caption {
+  margin: 0px 100px;
+  padding: 15px 0;
+}
+.content-node .caption.empty {
+  display: none;
+}
+.content-node .caption:before {
+  content: "Fig. " counter(figure) " ";
+}
+.content-node.image {
+  text-align: center;
+}
+.image-content {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.image-content img, .image-content div {
+  padding: 0;
+  margin: 0;
+  max-width: 720px;
+  min-width: 200px;
+  min-height: 150px;
+  display: block;
+  padding: 5px 0;
+}
+.image-content.placeholder .image-file {
+  bottom: 30px;
+}
+
+
+#document .resource-url-area .url-label {
+  color: #555;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+}
+#document .resource-url-area {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 20px;
+  border: 2px dashed #aaa;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.content-node.resource {
+  text-align: center;
+}
+.content-node.resource img {
+  padding: 0;
+  margin: 0;
+  max-width: 720px;
+  display: block;
+  padding: 5px 0;
+}
+
+.content-node.section {
+  margin-bottom: 10px;
+}
+#document h1 {
+  counter-reset: sub-section;
+  font-size: 30px;
+}
+#document h2 {
+  counter-reset: composite;
+}
+#document h1:before {
+  counter-increment: section;
+  content: counter(section) " ";
+  font-weight: bold;
+  margin-right: 20px;
+}
+#document h2:before {
+  counter-increment: sub-section;
+  content: counter(section) "." counter(sub-section) " ";
+  margin-right: 20px;
+  font-weight: bold;
+}
+#document h3:before {
+  counter-increment: composite;
+  content: counter(section) "." counter(sub-section) "." counter(composite) " ";
+  margin-right: 20px;
+  font-weight: bold;
+}
+#document h1,
+#document h2,
+#document h3,
+#document h4,
+#document h5 {
+  font-weight: normal;
+  margin: 0em 100px 0 55px;
+  padding: 0;
+  line-height: 1.6em;
+}
+
+#document h2 {
+  font-size: 20px;
+}
+#document h3 {
+  font-size: 16px;
+}
+#document .content-node.text .content {
+  padding: 10px 0;
+}
+.content-node.section > p, ul,ol {
+  margin: 0 100px;
+}
+
+code {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 12px;
+  padding: 0px 3px;
+  background: white;
+  border: 1px solid #DDD;
+  zoom: 1;
+}
+#document strong,
+#document b {
+  font-weight: bold;
+}
+#document em,
+#document i {
+  font-style: italic;
+}
+#document p {
+  margin-bottom: 20px;
+  min-height: 22px;
+}
+#document ol {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+#document ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+p.info {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	
+  padding: 10px 0 5px 0;
+}
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 20px;
+}
+h2 {
+  font-size: 160%;
+  padding-bottom: 15px;
+}
+.content-node.document .document-title {
+  padding-top: 20px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 100px 10px 100px;
+}
+.content-node.document .author {
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 70px;
+}
+.content-node.document .published {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content-node.document #document_lead {
+  font-size: 18px;
+  line-height: 1.2;
+  font-style: italic;
+  text-align: center;
+  color: #999;
+  padding: 0 100px 0 100px;
+}
+hr{
+	display:none
+}
+/* Button
+-------------------------------------------------------------------------------*/
+a.button {
+  border: none;
+  display: block;
+  float: left;
+  font-size: 15px;
+  color: white;
+  background: #A2C44E;
+  padding: 7px 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+a.button.contribute {
+  margin-top: 20px;
+}
+a.button:hover {
+  background: #B4D354;
+}
+a.button:active {
+  background: #98B247;
+}
+#document #document_lens {
+	display:none;
+}
+.footer{
+	display:none;
+}

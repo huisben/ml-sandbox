@@ -1,0 +1,67 @@
+svg {
+  border: solid 1px #666;
+  overflow: hidden;
+}
+
+th, td{
+	text-align:center;
+	vertical-align: middle;
+}
+th{
+	font-weight:bold;
+	padding:  .3em;
+}
+.snug {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+path {
+  fill: white;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.hex {
+  fill: white;
+  stroke: #000;
+  stroke-width: .4px;
+}
+
+
+.boundary {
+  fill: none;
+  stroke: #000;
+  stroke-width: 4px;
+  stroke-dasharray: 9, 6;
+}
+
+.ring {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.arrow {
+  fill: none;
+  stroke: navy;
+  fill: navy;
+}
+
+
+
+
+circle {
+  fill: #ccc;
+  stroke: #000;
+}
+
+rect {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width:.2px;
+  pointer-events: none;
+}
+
+#knn-slider{
+	margin:1em;}
